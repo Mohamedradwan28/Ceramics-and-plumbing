@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>معلم سراميك وسباك بجدة | تركيب رخام وبلاط وسباكة احترافية</title>
+<meta name="description" content="أفضل معلم سراميك و رخام و بلاط و سباك في جدة. تركيب احترافي، أعمال فاخرة، أسعار مناسبة. اتصل الآن 0510100319">
+<meta name="keywords" content="معلم سراميك جدة, سباك جدة, تركيب رخام جدة, بلاط جدة, فني سباكة جدة">
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; font-family:'Tajawal',sans-serif; }
+:root {
+  --gold:#c9a24b;
+  --gold-light:#e6c87a;
+  --dark:#1a1a1a;
+  --darker:#0d0d0d;
+  --light:#f5f5f5;
+  --gray:#2a2a2a;
+}
+html { scroll-behavior:smooth; }
+body { background:var(--light); color:var(--dark); line-height:1.7; overflow-x:hidden; }
+
+/* ===== Navbar ===== */
+.navbar {
+  position:fixed; top:0; width:100%; z-index:1000;
+  background:rgba(13,13,13,0.95); backdrop-filter:blur(10px);
+  padding:15px 5%; display:flex; justify-content:space-between; align-items:center;
+  transition:0.3s; box-shadow:0 2px 20px rgba(0,0,0,0.3);
+}
+.logo { color:var(--gold); font-size:1.6rem; font-weight:900; display:flex; align-items:center; gap:10px; }
+.logo i { font-size:1.8rem; }
+.nav-links { display:flex; gap:30px; list-style:none; }
+.nav-links a { color:#fff; text-decoration:none; font-weight:500; transition:0.3s; position:relative; }
+.nav-links a:hover { color:var(--gold); }
+.nav-links a::after {
+  content:''; position:absolute; bottom:-5px; right:0; width:0; height:2px;
+  background:var(--gold); transition:0.3s;
+}
+.nav-links a:hover::after { width:100%; }
+.menu-toggle { display:none; color:#fff; font-size:1.8rem; cursor:pointer; background:none; border:none; }
+
+/* ===== Hero ===== */
+.hero {
+  min-height:100vh;
+  background:linear-gradient(135deg,rgba(13,13,13,0.85),rgba(26,26,26,0.75)),
+    url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1600') center/cover;
+  display:flex; align-items:center; justify-content:center; text-align:center;
+  color:#fff; padding:100px 20px 50px; position:relative;
+}
+.hero-content { max-width:900px; animation:fadeUp 1s ease; }
+.hero h1 { font-size:3.5rem; font-weight:900; margin-bottom:20px; line-height:1.3; }
+.hero h1 span { color:var(--gold); }
+.hero p { font-size:1.3rem; margin-bottom:35px; color:#ddd; }
+.hero-btns { display:flex; gap:20px; justify-content:center; flex-wrap:wrap; }
+.btn {
+  padding:15px 40px; border-radius:50px; text-decoration:none; font-weight:700;
+  font-size:1.1rem; transition:0.3s; display:inline-flex; align-items:center; gap:10px;
+  border:2px solid transparent; cursor:pointer;
+}
+.btn-primary { background:var(--gold); color:var(--dark); }
+.btn-primary:hover { background:var(--gold-light); transform:translateY(-3px); box-shadow:0 10px 25px rgba(201,162,75,0.4); }
+.btn-outline { border-color:#fff; color:#fff; }
+.btn-outline:hover { background:#fff; color:var(--dark); }
+
+@keyframes fadeUp { from{opacity:0; transform:translateY(40px);} to{opacity:1; transform:translateY(0);} }
+
+/* ===== Sections ===== */
+section { padding:80px 5%; }
+.section-title { text-align:center; margin-bottom:60px; }
+.section-title h2 { font-size:2.8rem; color:var(--dark); font-weight:900; margin-bottom:15px; }
+.section-title h2 span { color:var(--gold); }
+.section-title p { color:#666; font-size:1.1rem; }
+.section-title .line { width:80px; height:4px; background:var(--gold); margin:15px auto; border-radius:2px; }
+
+/* ===== Services ===== */
+.services-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:30px; max-width:1300px; margin:0 auto; }
+.service-card {
+  background:#fff; border-radius:20px; padding:40px 30px; text-align:center;
+  box-shadow:0 10px 40px rgba(0,0,0,0.08); transition:0.4s; position:relative; overflow:hidden;
+  border-top:4px solid var(--gold);
+}
+.service-card::before {
+  content:''; position:absolute; top:0; right:0; width:100%; height:100%;
+  background:linear-gradient(135deg,var(--gold),var(--gold-light));
+  transform:translateY(100%); transition:0.4s; z-index:0;
+}
+.service-card:hover::before { transform:translateY(0); }
+.service-card:hover { transform:translateY(-10px); box-shadow:0 20px 50px rgba(0,0,0,0.15); }
+.service-card:hover * { color:#fff !important; position:relative; z-index:1; }
+.service-card:hover .service-icon { background:#fff; color:var(--gold); }
+.service-icon {
+  width:90px; height:90px; margin:0 auto 20px; background:var(--gold);
+  border-radius:50%; display:flex; align-items:center; justify-content:center;
+  font-size:2.5rem; color:#fff; transition:0.4s; position:relative; z-index:1;
+}
+.service-card h3 { font-size:1.5rem; margin-bottom:15px; color:var(--dark); position:relative; z-index:1; }
+.service-card p { color:#666; position:relative; z-index:1; }
+
+/* ===== Additional Services ===== */
+.additional-services { background:linear-gradient(135deg,#f9f6f0,#fff); }
+.services-grid-2 { display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:25px; max-width:1300px; margin:0 auto; }
+.service-box {
+  background:#fff; border-radius:15px; padding:30px; display:flex; gap:20px;
+  align-items:flex-start; box-shadow:0 5px 20px rgba(0,0,0,0.08); transition:0.3s;
+  border-right:4px solid var(--gold);
+}
+.service-box:hover { transform:translateX(-5px); box-shadow:0 8px 30px rgba(0,0,0,0.12); }
+.service-box i {
+  font-size:2.5rem; color:var(--gold); background:rgba(201,162,75,0.1);
+  width:70px; height:70px; border-radius:50%; display:flex; align-items:center; justify-content:center;
+  flex-shrink:0;
+}
+.service-box h4 { font-size:1.3rem; margin-bottom:10px; color:var(--dark); }
+.service-box p { color:#666; font-size:0.95rem; }
+
+/* ===== Articles/Blog ===== */
+.articles-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(320px,1fr)); gap:30px; max-width:1300px; margin:0 auto; }
+.article-card {
+  background:#fff; border-radius:20px; overflow:hidden; box-shadow:0 10px 30px rgba(0,0,0,0.1);
+  transition:0.4s;
+}
+.article-card:hover { transform:translateY(-10px); box-shadow:0 15px 40px rgba(0,0,0,0.15); }
+.article-image {
+  height:220px; background:linear-gradient(135deg,var(--gold),var(--gold-light));
+  display:flex; align-items:center; justify-content:center; position:relative; overflow:hidden;
+}
+.article-image img { width:100%; height:100%; object-fit:cover; transition:0.5s; }
+.article-card:hover .article-image img { transform:scale(1.1); }
+.article-category {
+  position:absolute; top:15px; right:15px; background:var(--gold); color:var(--dark);
+  padding:5px 15px; border-radius:20px; font-weight:700; font-size:0.85rem;
+}
+.article-content { padding:25px; }
+.article-date { color:#888; font-size:0.9rem; margin-bottom:10px; display:flex; align-items:center; gap:8px; }
+.article-content h3 { font-size:1.4rem; margin-bottom:15px; color:var(--dark); line-height:1.4; }
+.article-content p { color:#666; margin-bottom:20px; }
+.read-more {
+  color:var(--gold); text-decoration:none; font-weight:700; display:inline-flex; align-items:center; gap:8px;
+  transition:0.3s;
+}
+.read-more:hover { gap:15px; }
+
+/* ===== Features ===== */
+.features { background:var(--dark); color:#fff; }
+.features .section-title h2 { color:#fff; }
+.features-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:30px; max-width:1200px; margin:0 auto; }
+.feature-box {
+  text-align:center; padding:30px 20px; border:1px solid rgba(201,162,75,0.3);
+  border-radius:15px; transition:0.3s; background:rgba(255,255,255,0.03);
+}
+.feature-box:hover { border-color:var(--gold); background:rgba(201,162,75,0.1); transform:scale(1.05); }
+.feature-box i { font-size:3rem; color:var(--gold); margin-bottom:15px; }
+.feature-box h4 { font-size:1.3rem; margin-bottom:10px; }
+.feature-box p { color:#bbb; font-size:0.95rem; }
+
+/* ===== Gallery ===== */
+.gallery-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:20px; max-width:1300px; margin:0 auto; }
+.gallery-item {
+  height:280px; border-radius:15px; overflow:hidden; position:relative; cursor:pointer;
+  box-shadow:0 5px 20px rgba(0,0,0,0.1);
+}
+.gallery-item img { width:100%; height:100%; object-fit:cover; transition:0.5s; }
+.gallery-item:hover img { transform:scale(1.15); }
+.gallery-item .overlay {
+  position:absolute; inset:0; background:linear-gradient(to top,rgba(0,0,0,0.8),transparent);
+  display:flex; align-items:flex-end; padding:20px; color:#fff; font-weight:700; font-size:1.2rem;
+  opacity:0; transition:0.3s;
+}
+.gallery-item:hover .overlay { opacity:1; }
+
+/* ===== Testimonials ===== */
+.testimonials { background:linear-gradient(135deg,#f9f6f0,#fff); }
+.testi-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:30px; max-width:1200px; margin:0 auto; }
+.testi-card {
+  background:#fff; padding:35px; border-radius:20px; box-shadow:0 10px 30px rgba(0,0,0,0.08);
+  position:relative; transition:0.3s;
+}
+.testi-card:hover { transform:translateY(-5px); box-shadow:0 15px 40px rgba(0,0,0,0.12); }
+.testi-card::before {
+  content:'"'; position:absolute; top:10px; left:20px; font-size:5rem; color:var(--gold);
+  opacity:0.3; font-family:serif;
+}
+.testi-stars { color:var(--gold); margin-bottom:15px; font-size:1.1rem; }
+.testi-text { color:#555; margin-bottom:20px; font-style:italic; }
+.testi-author { display:flex; align-items:center; gap:15px; }
+.testi-avatar {
+  width:55px; height:55px; border-radius:50%; background:var(--gold); color:#fff;
+  display:flex; align-items:center; justify-content:center; font-weight:900; font-size:1.3rem;
+}
+.testi-author h5 { color:var(--dark); font-size:1.1rem; }
+.testi-author small { color:#888; }
+
+/* ===== Contact ===== */
+.contact { background:var(--darker); color:#fff; }
+.contact .section-title h2 { color:#fff; }
+.contact-wrapper { display:grid; grid-template-columns:1fr 1fr; gap:50px; max-width:1200px; margin:0 auto; }
+.contact-info h3 { font-size:1.8rem; margin-bottom:20px; color:var(--gold); }
+.contact-info p { margin-bottom:30px; color:#ccc; }
+.info-item { display:flex; align-items:center; gap:15px; margin-bottom:20px; }
+.info-item i {
+  width:50px; height:50px; background:var(--gold); color:var(--dark); border-radius:50%;
+  display:flex; align-items:center; justify-content:center; font-size:1.2rem;
+}
+.info-item div h5 { color:#fff; margin-bottom:5px; }
+.info-item div a, .info-item div span { color:#ccc; text-decoration:none; }
+.info-item div a:hover { color:var(--gold); }
+
+.contact-form { background:rgba(255,255,255,0.05); padding:40px; border-radius:20px; border:1px solid rgba(201,162,75,0.2); }
+.contact-form input, .contact-form textarea, .contact-form select {
+  width:100%; padding:15px; margin-bottom:15px; background:rgba(255,255,255,0.08);
+  border:1px solid rgba(255,255,255,0.15); border-radius:10px; color:#fff; font-family:inherit; font-size:1rem;
+}
+.contact-form input::placeholder, .contact-form textarea::placeholder { color:#aaa; }
+.contact-form input:focus, .contact-form textarea:focus, .contact-form select:focus {
+  outline:none; border-color:var(--gold); background:rgba(255,255,255,0.12);
+}
+.contact-form textarea { resize:vertical; min-height:120px; }
+.contact-form button {
+  width:100%; padding:15px; background:var(--gold); color:var(--dark); border:none;
+  border-radius:10px; font-weight:700; font-size:1.1rem; cursor:pointer; transition:0.3s;
+}
+.contact-form button:hover { background:var(--gold-light); }
+
+/* ===== Floating Buttons ===== */
+.floating-buttons {
+  position:fixed; bottom:25px; left:25px; display:flex; flex-direction:column; gap:15px; z-index:999;
+}
+.float-btn {
+  width:65px; height:65px; border-radius:50%; display:flex; align-items:center; justify-content:center;
+  font-size:2rem; color:#fff; text-decoration:none; box-shadow:0 5px 25px rgba(0,0,0,0.3);
+  transition:0.3s; animation:pulse 2s infinite;
+}
+.float-btn:hover { transform:scale(1.1); }
+.float-btn.whatsapp { background:#25d366; box-shadow:0 5px 25px rgba(37,211,102,0.5); }
+.float-btn.phone { background:#007bff; box-shadow:0 5px 25px rgba(0,123,255,0.5); animation-delay:0.5s; }
+@keyframes pulse {
+  0%,100% { box-shadow:0 5px 25px rgba(0,0,0,0.3); }
+  50% { box-shadow:0 5px 35px rgba(0,0,0,0.6); }
+}
+
+/* ===== Footer ===== */
+footer { background:#000; color:#888; text-align:center; padding:30px 20px; }
+footer p { margin-bottom:10px; }
+footer .social { display:flex; justify-content:center; gap:15px; margin-bottom:15px; }
+footer .social a {
+  width:40px; height:40px; background:var(--gray); color:#fff; border-radius:50%;
+  display:flex; align-items:center; justify-content:center; text-decoration:none; transition:0.3s;
+}
+footer .social a:hover { background:var(--gold); color:var(--dark); }
+
+/* ===== Responsive ===== */
+@media(max-width:768px) {
+  .nav-links { display:none; position:absolute; top:100%; right:0; width:100%;
+    background:var(--dark); flex-direction:column; padding:20px; gap:15px; }
+  .nav-links.active { display:flex; }
+  .menu-toggle { display:block; }
+  .hero h1 { font-size:2.2rem; }
+  .hero p { font-size:1rem; }
+  .section-title h2 { font-size:2rem; }
+  .contact-wrapper { grid-template-columns:1fr; }
+  section { padding:60px 5%; }
+  .floating-buttons { bottom:20px; left:20px; }
+  .float-btn { width:60px; height:60px; font-size:1.8rem; }
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar">
+  <div class="logo"><i class="fas fa-gem"></i> معلم جدة</div>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#home">الرئيسية</a></li>
+    <li><a href="#services">خدماتنا</a></li>
+    <li><a href="#additional-services">خدمات إضافية</a></li>
+    <li><a href="#articles">مقالات</a></li>
+    <li><a href="#gallery">أعمالنا</a></li>
+    <li><a href="#contact">تواصل معنا</a></li>
+  </ul>
+  <button class="menu-toggle" onclick="document.getElementById('navLinks').classList.toggle('active')">
+    <i class="fas fa-bars"></i>
+  </button>
+</nav>
+
+<!-- Hero -->
+<section class="hero" id="home">
+  <div class="hero-content">
+    <h1>أفضل <span>معلم سراميك و رخام</span><br>و <span>سباك محترف</span> في جدة</h1>
+    <p>خبرة أكثر من 15 عامًا في تركيب السراميك والرخام والبلاط بجميع أنواعه، وأعمال السباكة الشاملة بأعلى جودة وأفضل الأسعار</p>
+    <div class="hero-btns">
+      <a href="https://wa.me/966510100319?text=السلام%20عليكم%20أرغب%20في%20الاستفسار%20عن%20خدماتكم" class="btn btn-primary">
+        <i class="fab fa-whatsapp"></i> واتساب الآن
+      </a>
+      <a href="tel:0510100319" class="btn btn-outline">
+        <i class="fas fa-phone"></i> اتصل بنا
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Services -->
+<section id="services">
+  <div class="section-title">
+    <h2>خدماتنا <span>المتميزة</span></h2>
+    <div class="line"></div>
+    <p>نقدم مجموعة متكاملة من الخدمات بأعلى معايير الجودة</p>
+  </div>
+  <div class="services-grid">
+    <div class="service-card">
+      <div class="service-icon"><i class="fas fa-th-large"></i></div>
+      <h3>تركيب السراميك</h3>
+      <p>تركيب جميع أنواع السراميك للأرضيات والجدران بدقة عالية وتشطيبات فاخرة</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon"><i class="fas fa-mountain"></i></div>
+      <h3>تركيب الرخام</h3>
+      <p>رخام طبيعي وصناعي بأجود الأنواع، للمنازل والفلل والقصور والمكاتب</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon"><i class="fas fa-border-all"></i></div>
+      <h3>تركيب البلاط</h3>
+      <p>بلاط بورسلين وبورسلين مصقول وبلاط خارجي وداخلي بأشكال وتصاميم عصرية</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon"><i class="fas fa-faucet"></i></div>
+      <h3>أعمال السباكة</h3>
+      <p>تمديد وإصلاح شبكات المياه والصرف الصحي، كشف التسربات، تركيب السخانات</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon"><i class="fas fa-tools"></i></div>
+      <h3>صيانة وإصلاح</h3>
+      <p>صيانة دورية وإصلاح الأعطال بسرعة واحترافية مع ضمان على العمل</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon"><i class="fas fa-paint-roller"></i></div>
+      <h3>التجديد والديكور</h3>
+      <p>تجديد الحمامات والمطابخ وتصاميم ديكورية عصرية تناسب ذوقك</p>
+    </div>
+  </div>
+</section>
+
+<!-- Additional Services -->
+<section class="additional-services" id="additional-services">
+  <div class="section-title">
+    <h2>خدمات <span>إضافية</span></h2>
+    <div class="line"></div>
+    <p>نقدم خدمات متخصصة أخرى لتلبية جميع احتياجاتك</p>
+  </div>
+  
+    <div class="service-box">
+      <i class="fas fa-shower"></i>
+      <div>
+        <h4>تجديد الحمامات بالكامل</h4>
+        <p>تجديد شامل للحمامات من السباكة والسيراميك والتمديدات الصحية مع ضمان شامل على جميع الأعمال</p>
+      </div>
+    </div>
+    <div class="service-box">
+      <i class="fas fa-sink"></i>
+      <div>
+        <h4>تجديد المطابخ</h4>
+        <p>تركيب رخام المطابخ، تمديدات المياه، تصريف الأحواض، وتركيب جميع الأجهزة الصحية باحترافية</p>
+      </div>
+    </div>
+    <div class="service-box">
+      <i class="fas fa-temperature-high"></i>
+      <div>
+        <h4>تركيب السخانات</h4>
+        <p>تركيب وصيانة جميع أنواع السخانات الكهربائية والغازية والمركزية مع الضمان والصيانة الدورية</p>
+      </div>
+    </div>
+    <div class="service-box">
+      <i class="fas fa-water"></i>
+      <div>
+        <h4>تمديدات المياه والصرف</h4>
+        <p>تنفيذ جميع أعمال تمديدات المياه الباردة والساخنة وشبكات الصرف الصحي للمنازل والفلل</p>
+      </div>
+    </div>
+    <div class="service-box">
+      <i class="fas fa-hard-hat"></i>
+      <div>
+        <h4>أعمال الجبس والديكور</h4>
+        <p>تنفيذ أعمال الجبس بورد، الأسقف المستعارة، الديكورات الجبسية، والإضاءة المخفية</p>
+      </div>
+    </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Articles/Blog Section -->
+<section id="articles">
+  <div class="section-title">
+    <h2>مقالات <span>ونصائح</span></h2>
+    <div class="line"></div>
+    <p>نصائح وإرشادات مفيدة حول السراميك والرخام والسباكة</p>
+  </div>
+  <div class="articles-grid">
+    <article class="article-card">
+      <div class="article-image">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJ877oTLtlQdF282DjA2-k6zIil0fIu3bfuMdBaE-oJoWBi9dYjJrxNygZ&s=10" alt="أنواع الرخام">
+        <span class="article-category">الرخام</span>
+      </div>
+      <div class="article-content">
+        <div class="article-date"><i class="far fa-calendar"></i> 25 يونيو 2026</div>
+        <h3>دليلك الشامل لاختيار أفضل أنواع الرخام لمنزلك</h3>
+        <p>تعرف على أنواع الرخام المختلفة ومميزات كل نوع وكيفية الاختيار الأنسب لمساحتك وميزانيتك...</p>
+        <a href="#" class="read-more" onclick="showArticle('marble')">اقرأ المزيد <i class="fas fa-arrow-left"></i></a>
+      </div>
+    </article>
+    
+    
+    
+    <article class="article-card">
+      <div class="article-image">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuQs-KNn3sUNgjtYOL2BekIe63Ndc_dsA-0X9-cvG0PQ&s" alt="السيراميك">
+        <span class="article-category">السيراميك</span>
+      </div>
+      <div class="article-content">
+        <div class="article-date"><i class="far fa-calendar"></i> 15 يونيو 2026</div>
+        <h3>أفضل نصائح لتركيب السيراميك بشكل احترافي</h3>
+        <p>نصائح ذهبية من الخبراء لتركيب السيراميك بشكل مثالي وضمان عمر افتراضي أطول لأرضياتك...</p>
+        <a href="#" class="read-more" onclick="showArticle('ceramic')">اقرأ المزيد <i class="fas fa-arrow-left"></i></a>
+      </div>
+    </article>
+    
+  </div>
+</section>
+
+<!-- Features -->
+<section class="features" id="features">
+  <div class="section-title">
+    <h2>لماذا <span>تختارنا؟</span></h2>
+    <div class="line"></div>
+    <p>نتميز بالجودة والاحترافية في كل تفاصيل عملنا</p>
+  </div>
+  <div class="features-grid">
+    <div class="feature-box">
+      <i class="fas fa-award"></i>
+      <h4>خبرة 15+ سنة</h4>
+      <p>سنوات طويلة من الخبرة في مجال السيراميك والسباكة</p>
+    </div>
+    <div class="feature-box">
+      <i class="fas fa-hand-holding-usd"></i>
+      <h4>أسعار منافسة</h4>
+      <p>أفضل الأسعار في جدة مع الحفاظ على أعلى جودة</p>
+    </div>
+    <div class="feature-box">
+      <i class="fas fa-clock"></i>
+      <h4>التزام بالمواعيد</h4>
+      <p>نلتزم بتسليم العمل في الوقت المحدد دون تأخير</p>
+    </div>
+    <div class="feature-box">
+      <i class="fas fa-shield-alt"></i>
+      <h4>ضمان على العمل</h4>
+      <p>نقدم ضمان شامل على جميع أعمالنا لراحة بالك</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- Testimonials -->
+<section class="testimonials">
+  <div class="section-title">
+    <h2>آراء <span>عملائنا</span></h2>
+    <div class="line"></div>
+    <p>ماذا يقول عملاؤنا الكرام عن خدماتنا</p>
+  </div>
+  <div class="testi-grid">
+    <div class="testi-card">
+      <div class="testi-stars">★★★★★</div>
+      <p class="testi-text">شغل ممتاز ونظيف، المعلم محترف جداً والتزام بالموعد. أنصح الجميع بالتعامل معه.</p>
+      <div class="testi-author">
+        <div class="testi-avatar">أ</div>
+        <div><h5>أبو محمد</h5><small>حي الروضة - جدة</small></div>
+      </div>
+    </div>
+    <div class="testi-card">
+      <div class="testi-stars">★★★★★</div>
+      <p class="testi-text">ركب لي رخام الفيلا كله، شغل فني راقي والأسعار معقولة. الله يعطيه العافية.</p>
+      <div class="testi-author">
+        <div class="testi-avatar">خ</div>
+        <div><h5>خالد العتيبي</h5><small>حي الشاطئ - جدة</small></div>
+      </div>
+    </div>
+    <div class="testi-card">
+      <div class="testi-stars">★★★★★</div>
+      <p class="testi-text">سباك ممتاز، حل لي مشكلة التسريب بسرعة وبسعر مناسب. شكراً جزيلاً.</p>
+      <div class="testi-author">
+        <div class="testi-avatar">ف</div>
+        <div><h5>فهد السعيد</h5><small>حي الصفا - جدة</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section class="contact" id="contact">
+  <div class="section-title">
+    <h2>تواصل <span>معنا</span></h2>
+    <div class="line"></div>
+    <p>نحن في خدمتك على مدار الساعة</p>
+  </div>
+  <div class="contact-wrapper">
+    <div class="contact-info">
+      <h3>معلومات التواصل</h3>
+      <p>لا تتردد في التواصل معنا لأي استفسار أو طلب عرض سعر مجاني. فريقنا جاهز لخدمتك.</p>
+      <div class="info-item">
+        <i class="fab fa-whatsapp"></i>
+        <div><h5>واتساب</h5><a href="https://wa.me/966510100319">0510100319</a></div>
+      </div>
+      <div class="info-item">
+        <i class="fas fa-phone"></i>
+        <div><h5>اتصال مباشر</h5><a href="tel:0510100319">0510100319</a></div>
+      </div>
+      <div class="info-item">
+        <i class="fas fa-map-marker-alt"></i>
+        <div><h5>الموقع</h5><span>جدة - المملكة العربية السعودية</span></div>
+      </div>
+      <div class="info-item">
+        <i class="fas fa-clock"></i>
+        <div><h5>ساعات العمل</h5><span>السبت - الخميس: 8 صباحاً - 10 مساءً</span></div>
+      </div>
+    </div>
+    <form class="contact-form" onsubmit="sendWhatsApp(event)">
+      <input type="text" id="name" placeholder="الاسم الكامل" required>
+      <input type="tel" id="phone" placeholder="رقم الجوال" required>
+      <select id="service" required>
+        <option value="">اختر الخدمة المطلوبة</option>
+        <option>تركيب سراميك</option>
+        <option>تركيب رخام</option>
+        <option>تركيب بلاط</option>
+        <option>أعمال سباكة</option>
+        <option>كشف تسربات</option>
+        <option>تجديد حمامات</option>
+        <option>تجديد مطابخ</option>
+        <option>أخرى</option>
+      </select>
+      <textarea id="message" placeholder="تفاصيل الطلب..." required></textarea>
+      <button type="submit"><i class="fab fa-whatsapp"></i> إرسال عبر الواتساب</button>
+    </form>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="social">
+    <a href="https://wa.me/966510100319"><i class="fab fa-whatsapp"></i></a>
+    <a href="tel:0510100319"><i class="fas fa-phone"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-twitter"></i></a>
+  </div>
+  <p>© 2026 معلم سراميك وسباك جدة - جميع الحقوق محفوظة</p>
+  <p>📞 0510100319 | جدة - المملكة العربية السعودية</p>
+</footer>
+
+<!-- Floating Buttons -->
+<div class="floating-buttons">
+  <a href="tel:0510100319" class="float-btn phone" title="اتصل الآن">
+    <i class="fas fa-phone"></i>
+  </a>
+  <a href="https://wa.me/966510100319?text=السلام%20عليكم%20أرغب%20في%20الاستفسار%20عن%20خدماتكم" class="float-btn whatsapp" title="تواصل عبر الواتساب">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+</div>
+
+<script>
+// Navbar scroll effect
+window.addEventListener('scroll', () => {
+  const nav = document.querySelector('.navbar');
+  if (window.scrollY > 50) nav.style.padding = '10px 5%';
+  else nav.style.padding = '15px 5%';
+});
+
+// Form to WhatsApp
+function sendWhatsApp(e) {
+  e.preventDefault();
+  const name = document.getElementById('name').value;
+  const phone = document.getElementById('phone').value;
+  const service = document.getElementById('service').value;
+  const message = document.getElementById('message').value;
+  const text = `السلام عليكم%0Aالاسم: ${name}%0Aالجوال: ${phone}%0Aالخدمة: ${service}%0Aالتفاصيل: ${message}`;
+  window.open(`https://wa.me/966510100319?text=${text}`, '_blank');
+}
+
+// Show article alert (placeholder for future article pages)
+function showArticle(type) {
+  const articles = {
+    'marble': 'دليلك الشامل لاختيار أفضل أنواع الرخام لمنزلك - قريباً',
+    'leaks': 'كيفية كشف التسربات المائية دون تكسير - قريباً',
+    'ceramic': 'أفضل نصائح لتركيب السيراميك بشكل احترافي - قريباً',
+    'porcelain': 'الفرق بين البورسلين والسيراميك العادي - قريباً',
+    'kitchen': 'خطوات تجديد المطبخ بشكل عملي واقتصادي - قريباً',
+    'heater': 'كيفية صيانة السخان الكهربائي وإطالة عمره - قريباً'
+  };
+  alert(articles[type] || 'المقال قيد التحضير - تواصل معنا للمزيد من المعلومات');
+}
+
+// Smooth scroll close mobile menu
+document.querySelectorAll('.nav-links a').forEach(link => {
+  link.addEventListener('click', () => {
+    document.getElementById('navLinks').classList.remove('active');
+  });
+});
+</script>
+</body>
+</html>
